@@ -1,0 +1,20 @@
+.teacher {
+  background-color: aqua;
+}
+
+.student {
+  background-color: lightgreen;
+}
+
+.other {
+  background-color: lightgray;
+}
+
+.role {
+  font-size: 0.75rem;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

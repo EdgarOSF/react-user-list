@@ -1,0 +1,24 @@
+.user {
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name span {
+  font-weight: bold;
+}
+
+.name {
+  width: 60%;
+}
+
+.role,
+.status {
+  width: 20%;
+}
