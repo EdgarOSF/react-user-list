@@ -1,18 +1,30 @@
+import { useState } from 'react';
 import UserRol from './UserRole';
 import style from './UserRow.module.css';
 import UserStatus from './UserStatus';
 
-const UserRow = ({ name, active, role, ...restProps }) => {
+const UserRow = ({ name, active, role }) => {
+  const [activeState, setActiveState] = useState(active);
+
   return (
-    <div className={style.user} {...restProps}>
+    <div className={style.user}>
       <div className={style.name}>
         <span>{name}</span>
       </div>
       <div className={style.status}>
-        <UserStatus active={active} />
+        <UserStatus active={activeState} />
       </div>
       <div className={style.role}>
         <UserRol role={role} />
+      </div>
+      <div className={style.action}>
+        <button
+          onClick={() => {
+            setActiveState(!activeState);
+          }}
+        >
+          {activeState ? 'Desactivar' : 'Activar'}
+        </button>
       </div>
     </div>
   );

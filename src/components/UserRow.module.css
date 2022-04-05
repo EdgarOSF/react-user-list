@@ -10,15 +10,16 @@
   align-items: center;
 }
 
-.name span {
+.name {
+  width: 40%;
   font-weight: bold;
 }
 
-.name {
-  width: 60%;
-}
-
 .role,
-.status {
+.status,
+.action {
   width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
