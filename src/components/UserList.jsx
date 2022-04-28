@@ -21,10 +21,8 @@ const UsersList = ({ initialUsers }) => {
         sortBy={sortBy}
         {...setFilters}
       />
-      <UsersContext.Provider value={toggleUserActive} >
-      <UsersListRows
-        users={filteredUsers}
-      />
+      <UsersContext.Provider value={{toggleUserActive}}>
+        <UsersListRows users={filteredUsers} />
       </UsersContext.Provider>
     </div>
   );
