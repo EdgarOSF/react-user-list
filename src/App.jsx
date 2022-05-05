@@ -25,6 +25,12 @@ const USERS = [
     active: false,
     role: 'student',
   },
+  {
+    username: 'javier',
+    name: 'Javier López',
+    active: true,
+    role: 'other',
+  },
 ];
 
 const App = () => <UserList initialUsers={USERS} />;
