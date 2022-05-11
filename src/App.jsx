@@ -1,5 +1,5 @@
 import UserList from './components/UserList';
 
-const App = () => <UserList initialUsers={USERS} />;
+const App = () => <UserList />;
 
 export default App;
