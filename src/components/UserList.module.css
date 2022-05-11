@@ -1,13 +1,13 @@
-.list {
-  width: 100%;
-  max-width: 750px;
-  margin: auto;
-  padding: 1rem;
+.wrapper {
+	width: 100%;
+	max-width: 750px;
+	margin: auto;
+	padding: 1rem;
 }
 
 .title {
-  text-align: center;
-  margin-bottom: 5rem;
+	text-align: center;
+	margin-bottom: 4rem;
 }
 
 
