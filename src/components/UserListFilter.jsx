@@ -11,6 +11,7 @@ const UserListFilter = ({
   setSearch,
   setOnlyActive,
   setSortBy,
+  slot,
 }) => {
   return (
     <div className={style.form}>
@@ -27,7 +28,9 @@ const UserListFilter = ({
           <option value={SORT_OPTIONS.DEFAULT}>Por defecto</option>
           <option value={SORT_OPTIONS.NAME}>Por nombre</option>
           <option value={SORT_OPTIONS.ROLE}>Por rol</option>
-          {!onlyActive && <option value={SORT_OPTIONS.ACTIVE}>Por activos</option>}
+          {!onlyActive && (
+            <option value={SORT_OPTIONS.ACTIVE}>Por activos</option>
+          )}
         </Select>
       </div>
       <div className={style.row}>
@@ -39,6 +42,7 @@ const UserListFilter = ({
           />
           <label>Mostrar solo activos</label>
         </div>
+        {slot}
       </div>
     </div>
   );
